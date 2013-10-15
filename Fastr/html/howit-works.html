@@ -1,0 +1,340 @@
+	<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+
+
+	<meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>fastr - Customer Service MADE FOR YOU!</title>
+	<meta name="description" content="fastr - customer service made for you">
+	<meta name="keywords" content="fastr, customer, service, easy, faster, messaging, faster">
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel='stylesheet' href='assets/css/app.css'>
+	  <link rel='stylesheet' href='assets/css/animate.min.css'>
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Yanone+Kaffeesatz:200,300,400,700|Raleway:200,300,400,500,700' rel='stylesheet' type='text/css'>
+	  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel='stylesheet'>
+	  
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="assets/images/favicon.ico">
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	<link rel="apple-touch-icon" href="assets/images/favicon.ico">
+	
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<!-- Fonts -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'> -->
+
+	<!-- Stylesheets -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://fastr.co/stylesheets/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="http://fastr.co/stylesheets/ie.css" />
+	<![endif]-->
+
+</head>
+
+<body>
+
+<!-- Contact Modal -->
+<div aria-hidden='true' aria-labelledby='contactModalLabel' class='modal fade' id='contactModal' role='dialog' tabindex='-1'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+        <h4 class='modal-title'>We'd love to hear from you</h4>
+      </div>
+      <div class='modal-body'>
+        <form action='#' role='form'>
+          <div class='form-group'>
+            <div class='row'>
+              <div class='col-md-6'>
+                <label class='control-label' for=''>Your Name</label>
+                <input class='form-control' placeholder='Full Name' type='text'>
+              </div>
+              <div class='col-md-6'>
+                <label class='control-label' for=''>Your Email</label>
+                <input class='form-control' placeholder='you@email.com' type='text'>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <div class='row'>
+              <div class='col-md-12'>
+                <label class='control-label' for=''>Your Message</label>
+                <textarea class='form-control' name='' rows='4'></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class='modal-footer'>
+        <button class='btn btn-default' data-dismiss='modal' type='button'>Cancel</button>
+        <button class='btn btn-success' type='button'>Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pilot Modal -->
+<div aria-hidden='true' aria-labelledby='contactModalLabel' class='modal fade' id='pilotModal' role='dialog' tabindex='-1'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+        <h4 class='modal-title'>We'd love to join out our <b>Pilot</b></h4>
+      </div>
+      <div class='modal-body'>
+        <form action='#' role='form'>
+          <div class='form-group'>
+            <div class='row'>
+              <div class='col-md-6'>
+                <label class='control-label' for=''>Your Name</label>
+                <input class='form-control' placeholder='Full Name' type='text'>
+              </div>
+              <div class='col-md-6'>
+                <label class='control-label' for=''>Your Email</label>
+                <input class='form-control' placeholder='email@company.com' type='text'>
+              </div>
+              <div class='col-md-6'>
+                <label class='control-label' for=''>Company</label>
+                <input class='form-control' placeholder='Company Name' type='text'>
+              </div>
+            </div>
+          </div>
+          <div class='form-group'>
+            <div class='row'>
+              <div class='col-md-12'>
+                <label class='control-label' for=''>Let us know why you would like to join the Pilot</label>
+                <textarea class='form-control' name='' rows='4'></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class='modal-footer'>
+        <button class='btn btn-default' data-dismiss='modal' type='button'>Cancel</button>
+        <button class='btn btn-success' type='button'>Send Request</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='noise-wrapper'>
+  <div class='header-main'>
+    <div class='container'>
+  <nav class='navbar navbar-default' role='navigation'>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class='navbar-header'>
+      <button class='navbar-toggle' data-target='.navbar-ex1-collapse' data-toggle='collapse' type='button'>
+        <span class='sr-only'>Toggle navigation</span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a class='current navbar-brand' href='consumer.html'>
+        <img alt='' height='45px' src='assets/images/fastrmainlogo.png'>
+      </a>
+    </div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class='collapse navbar-collapse navbar-ex1-collapse'>
+      <a class='btn btn-success navbar-btn navbar-right' href='business.html'>
+       Business
+        <i class='icon-signin'></i>
+      </a>
+      <ul class='nav navbar-nav navbar-right'>
+        <li>
+          <a href='consumer.html'>Home</a>
+        </li>
+        <li>
+          <a href='howit-works.html'><b>How it works</b></a>
+        </li>
+        <li>
+          <a href='free.html'>Pricing</a>
+        </li>
+        <li>
+          <a data-toggle='modal' href='#contactModal'>Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class='separator-shadow-bottom bottom-margin'>
+  <img alt='' src='assets/images/shadow-separator-wide-bottom.png'>
+</div>
+
+	<section class='leaderboard leaderboard-style-one'>
+      <div class='container'>
+        <div class='frame-browser-image pull-left'>
+          <img alt='' height='350px' src='assets/images/sidephone-small.png'>
+        </div> 
+          <h1 class='animated fadeInRight'>(1)</h1>
+          <h1 class='animated fadeInRight'>Search for businesses</h1>
+          <br>
+          <h4 class='animated fadeInLeft'>You can look at the ever-expanding directory of businesses on fastr. <br>If you can't find a business, let us know we will convince them</h4>
+        </div>
+      </div>
+    </section>
+	
+
+<div class='separator-shadow-bottom bottom-margin'>
+  	<img alt='' src='assets/images/shadow-separator-wide-bottom.png'>
+</div>
+
+    <section class='leaderboard leaderboard-style-one'>
+      <div class='container'>
+        <div class='frame-browser-image pull-right'>
+          <img alt='' height='350px' src='assets/images/static-phone.png'>
+        </div> 
+          <h1 class='animated fadeInRight'>(2)</h1>
+          <h1 class='animated fadeInRight'>Text your business</h1>
+          <br>
+          <h4 class='animated fadeInLeft'>Text the business with your questions, complaint, idea, feedback and suggestion. <br> Move on with your day and wait a response.</h4>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class='area-content'>
+  <div class='container'>
+    <div class='separator-shadow-top sub-screenshot-shadow'>
+      <img alt='' src='assets/images/shadow-separator-wide-top.png'>
+    </div>
+    <div class='iconed-features style-1'>
+      <div class='row'>
+        <div class='col-md-4'>
+          <div class='iconed-feature' href='#'>
+            <div class='feature-icon-w'>
+             <img src="http://fastr.co/images/icons/fastricon1.png" alt="">
+            </div>
+            <h4>No e-mail. Only Text.</h4>
+            <p>seamlessly and effortlessly contact businesses through text</p>
+            <!-- <div class='btn-show-on-parent-hover'> -->
+              <!-- <a class='read-more-link' href='#'>Read More</a>
+            </div> -->
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='iconed-feature' href='#'>
+            <div class='feature-icon-w'>
+              <img src="http://fastr.co/images/icons/setup.png" alt="">
+            </div>
+            <h4>Easy and Simple</h4>
+            <p>an intuitive easy approach to help people create a one-stop shop for 'feeling served'.</p>
+            
+          </div>
+        </div>
+        <div class='col-md-4'>
+          <div class='iconed-feature' href='#'>
+            <div class='feature-icon-w'>
+             <img src="http://fastr.co/images/icons/fastricon3.png" alt="">
+            </div>
+            <h4>Obviously, Fastr</h4>
+            <p>Isn't that obvious but wait till we release</p>
+            <div class='btn-show-on-parent-hover'>
+              <!--a class='read-more-link' href='#'>Read More</a-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+ </div> 
+
+<div class='separator-shadow-bottom bottom-margin'>
+  	<img alt='' src='assets/images/shadow-separator-wide-bottom.png'>
+</div>
+
+    <section class='leaderboard leaderboard-style-one'>
+      <div class='container'>
+        <div height='350px' class='frame-browser-image pull-left'>
+          <img alt='' height='500px' src='assets/images/handheld.png'>
+        </div> 
+          <h1 class='animated fadeInRight'>Its going to be in your hands <br> pretty soon</h1>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class='separator-shadow-top sub-screenshot-shadow'>
+      <img alt='' src='assets/images/shadow-separator-wide-top.png'>
+    </div>
+
+
+
+
+	<!-- Footer begins-->
+  <footer id="main-footer">
+    <div class="col-md-8">
+      <ul class="footer-menu">
+        <li class="col-md-6">
+          <li><a href="http://www.facebook.com/usefastr" target="_blank"><img src="http://fastr.co/images/icons/facebook.png" alt="www.facebook.com/usefastr"></a></li>
+          <li><a href="http://www.twitter.com/usefastr" target="_blank"><img src="http://fastr.co/images/icons/twitter.png" alt="www.twitter.com/usefastr"></a></li>
+
+          <br>
+          <br>
+      
+          <li class="col-md-6">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+   </footer>
+
+
+	<!-- Javascript -->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43167104-1', 'fastr.co');
+  ga('send', 'pageview');
+
+</script>
+	<script src="assets/js/prototype.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/sizzle.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/jquery.nicescroll.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/jquery.scrollto.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/jquery.localscroll.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/loupe.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/notifications.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/init.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src='assets/js/jquery.js'></script>
+  <script src='assets/js/bootstrap/button.js'></script>
+  <script src='assets/js/bootstrap/carousel.js'></script>
+  <script src='assets/js/bootstrap/transition.js'></script>
+  <script src='assets/js/bootstrap/collapse.js'></script>
+  <script src='assets/js/bootstrap/modal.js'></script>
+  <script src='assets/js/bootstrap/dropdown.js'></script>
+  <script src='assets/js/jquery.visible.min.js'></script>
+  <script src='assets/js/bootstrap/tab.js'></script>
+  <script src='assets/js/jquery.isotope.min.js'></script>
+  <script src='assets/js/jquery.knob.js'></script>
+  <script src='assets/js/jquery.scrollUp.min.js'></script>
+  <script src='assets/js/application.js'></script>
+</body>
+</body>
+
+</html>
